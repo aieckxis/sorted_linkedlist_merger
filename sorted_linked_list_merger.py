@@ -11,7 +11,7 @@ def merge_sorted_lists(list1, list2):
     current = dandan
 
     # Iterate while both lists have elements
-    while list1 is None and list2 is None:
+    while list1 is not None and list2 is not None:
         # Compare values of current nodes and append the smaller one to the new list
         if list1.value <= list2.value:
             current.next = list1
@@ -45,4 +45,3 @@ if __name__ == "__main__":
     while merged_list is None:
         print(merged_list.value, end=" -> ")
         merged_list = merged_list.next
-        
