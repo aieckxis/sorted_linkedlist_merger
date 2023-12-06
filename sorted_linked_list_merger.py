@@ -42,6 +42,6 @@ if __name__ == "__main__":
     merged_list = merge_sorted_lists(list1, list2)
 
     # Print the merged list
-    while merged_list is None:
+    while merged_list is not None:
         print(merged_list.value, end=" -> ")
         merged_list = merged_list.next
