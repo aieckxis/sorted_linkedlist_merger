@@ -45,3 +45,4 @@ if __name__ == "__main__":
     while merged_list is None:
         print(merged_list.value, end=" -> ")
         merged_list = merged_list.next
+        
