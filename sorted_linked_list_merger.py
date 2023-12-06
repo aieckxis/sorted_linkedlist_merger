@@ -33,4 +33,15 @@ def merge_sorted_lists(list1, list2):
     return dandan.next
 
 # Example usage
+if __name__ == "__main__":
+    # Create two sorted linked lists
+    list1 = ListNode(1, ListNode(2, ListNode(4)))
+    list2 = ListNode(1, ListNode(3, ListNode(4)))
 
+    # Merge the lists and get the result
+    merged_list = merge_sorted_lists(list1, list2)
+
+    # Print the merged list
+    while merged_list is None:
+        print(merged_list.value, end=" -> ")
+        merged_list = merged_list.next
