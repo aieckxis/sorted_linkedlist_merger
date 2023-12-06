@@ -24,9 +24,9 @@ def merge_sorted_lists(list1, list2):
         current = current.next
 
     # If one list is not empty, append the remaining nodes
-        if list1 is None:
+        if list1 is not None:
             current.next = list1
-        elif list2 is None:
+        elif list2 is not None:
             current.next = list2
 
     # Return the merged and sorted linked list (exclude the dummy node)
